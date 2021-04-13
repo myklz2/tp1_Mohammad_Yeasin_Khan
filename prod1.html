@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href=".\prod1.css" />
+    <link rel="stylesheet" href=".\prod.css" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body>
@@ -16,9 +19,13 @@
 
                 <div class="dropdown-content">
                     <a href="index.html">Accueil</a>
-                     
-                    <a href="cat1.html">Jaguar</a>
-                    <a href="cat2.html">Range Rover</a>
+                     <div class="sideshow">
+                  <a href="cat1.html">Jaguar</a>
+                  <button>
+                      
+                  </button>
+                     </div>  
+                  <a href="cat2.html">Range Rover</a>
 
 
 
@@ -27,7 +34,7 @@
 
         </div>
         <div class="right">
-            <a href="#">ACCOUNT</a>
+            <a href="#">Compte</a>
         </div>
         <div class="logo"><a href="#"><img src=".\images\logo2.png"></a></div>
     </div>
@@ -58,54 +65,19 @@
         </div>
     </div>
     <!--3d modal-->
+    
+<!-- Use it like any other HTML element -->
+<model-viewer id="mv-demo" shadow-intensity="1" src="./images/3d/scene.gltf.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls
+poster="./spacesuit.jpg"></model-viewer>
+    <!-- Use it like any other HTML element -->
+    <!-- <model-viewer src="images/3d/scene.gltf.glb" alt="A 3D Car" auto-rotate camera-controls></model-viewer> -->
     <div id="modal-wrapper" class="modal">
         <div class="center">
             <span onClick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times;</span>
             <div class="rotation">
-                <img src="C:\Users\kyeas\Desktop\vouiture\images\3d\scene.gltf.glb">
-                <img src="images/360/3.png">
-                <img src="images/360/4.png">
-                <img src="images/360/5.png">
-                <img src="images/360/6.png">
-                <img src="images/360/7.png">
-                <img src="images/360/8.png">
-                <img src="images/360/9.png">
-                <img src="images/360/10.png">
-                <img src="images/360/11.png">
-                <img src="images/360/12.png">
-                <img src="images/360/13.png">
-                <img src="images/360/14.png">
-                <img src="images/360/15.png">
-                <img src="images/360/16.png">
-                <img src="images/360/17.png">
-                <img src="images/360/18.png">
-                <img src="images/360/19.png">
-                <img src="images/360/20.png">
-                <img src="images/360/21.png">
-                <img src="images/360/22.png">
-                <img src="images/360/23.png">
-                <img src="images/360/24.png">
-                <img src="images/360/25.png">
-                <img src="images/360/26.png">
-                <img src="images/360/27.png">
-                <img src="images/360/28.png">
-                <img src="images/360/29.png">
-                <img src="images/360/30.png">
-                <img src="images/360/31.png">
-                <img src="images/360/32.png">
-                <img src="images/360/33.png">
-                <img src="images/360/34.png">
-                <img src="images/360/35.png">
-                <img src="images/360/36.png">
-                <img src="images/360/37.png">
-                <img src="images/360/38.png">
-                <img src="images/360/39.png">
-                <img src="images/360/40.png">
-                <img src="images/360/41.png">
-                <img src="images/360/42.png">
-                <img src="images/360/43.png">
-                <img src="images/360/44.png">
-                <img src="images/360/45.png">
+                
+
+                
             </div>
         </div>
     </div>
