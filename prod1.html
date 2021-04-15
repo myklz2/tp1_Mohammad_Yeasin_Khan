@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    
     <link rel="stylesheet" href=".\prod.css" />
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+ 
+<title>Prod 1</title>
+
 </head>
 
 <body>
@@ -21,9 +21,7 @@
                     <a href="index.html">Accueil</a>
                      <div class="sideshow">
                   <a href="cat1.html">Jaguar</a>
-                  <button>
-                      
-                  </button>
+                  
                      </div>  
                   <a href="cat2.html">Range Rover</a>
 
@@ -43,9 +41,9 @@
     <div class="content-container">
         <div class="img-container">
             <a href="#" onClick="document.getElementById('modal-wrapper').style.display='block'"><img
-                    src="images/CAR.png"></a>
+                    src="C:\Users\kyeas\Desktop\vouiture\images\prod1\img 3.jpg"></a>
             <button onClick="document.getElementById('modal-wrapper').style.display='block'">
-                <font style="font-weight:bold">3D</font> View
+                <font style="font-weight:bold">Photo</font> 
             </button>
         </div>
         <div class="text-container">
@@ -67,21 +65,29 @@
     <!--3d modal-->
     
 <!-- Use it like any other HTML element -->
-<model-viewer id="mv-demo" shadow-intensity="1" src="./images/3d/scene.gltf.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls
-poster="./spacesuit.jpg"></model-viewer>
-    <!-- Use it like any other HTML element -->
-    <!-- <model-viewer src="images/3d/scene.gltf.glb" alt="A 3D Car" auto-rotate camera-controls></model-viewer> -->
-    <div id="modal-wrapper" class="modal">
+  <div id="modal-wrapper" class="modal">
         <div class="center">
             <span onClick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times;</span>
-            <div class="rotation">
-                
 
-                
+                <div id="slideshow-example" data-component="slideshow">
+                    <div role="list">
+                      <div class="slide">
+                        <img src="C:\Users\kyeas\Desktop\vouiture\images\prod1\img 3.jpg" alt="1">
+                      </div>
+                      <div class="slide">
+                        <img src="C:\Users\kyeas\Desktop\vouiture\images\prod1\img2.jpg" alt="2">
+                      </div>
+                      <div class="slide">
+                        <img src="" alt="">
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
-    </div>
-    <script src="js/360deg.js"></script>
+    
+    <script src="prod.js"></script>
+   
+  
 </body>
 
 </html>
